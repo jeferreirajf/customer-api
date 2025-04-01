@@ -32,7 +32,7 @@ After cloning this repository, ensure that [Node.js](https://nodejs.org/en), [np
 1 ) Run dynamodb locally using docker:
 
 ```bash
-docker-compose -f docker-compose.development.yaml up -d
+docker compose -f docker-compose.development.yaml up -d
 ```
 
 2 ) Install the dependencies:
