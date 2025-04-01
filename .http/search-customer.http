@@ -1,0 +1,14 @@
+@keyword = doe
+@lastId = 9a40693c-5bef-4ce0-a069-bd9b972e14c8
+
+### Default search
+GET http://localhost:3000/dev/customers?keyword={{keyword}}&page=1&size=1
+Content-Type: application/json
+
+### Test lastId
+GET http://localhost:3000/dev/customers?keyword={{keyword}}&page=1&size=10&lastId={{lastId}}
+Content-Type: application/json
+
+### Give error
+GET http://localhost:3000/dev/customers?keyword={{keyword}}&page=1&size=101
+Content-Type: application/json

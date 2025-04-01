@@ -1,0 +1,23 @@
+@customerId = 40b1785c-6e5c-433f-9610-63defef86f5b
+
+###
+PUT http://localhost:3000/dev/customers/{{customerId}}
+Content-Type: application/json
+
+{
+    "name": "John Doe Updated",
+    "email": "john.updated@doe.com",
+    "document": "00000000000",
+    "customerType": "individual"
+}
+
+###
+PUT http://localhost:3000/dev/customers/customerId
+Content-Type: application/json
+
+{
+    "name": "John Doe Updated",
+    "email": "john.updated@doe.com",
+    "document": "00000000000",
+    "customerType": "individual"
+}

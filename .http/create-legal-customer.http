@@ -1,0 +1,10 @@
+###
+POST http://localhost:3000/dev/customers
+Content-Type: application/json
+
+{
+    "name": "John Doe Company",
+    "email": "john.doe@company.com",
+    "document": "91584342000151",
+    "customerType": "legal",
+}

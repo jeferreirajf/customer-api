@@ -1,0 +1,20 @@
+service: serverless-example
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+
+custom:
+  optimize:
+    external: ['swagger-ui-dist']
+
+functions:
+  main:
+    handler: dist/src/main.handler
+    events:
+      - http:
+          method: ANY
+          path: '{proxy+}'

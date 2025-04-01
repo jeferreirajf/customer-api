@@ -1,0 +1,5 @@
+@customerId = ca08588b-cb75-4a94-beaa-9af2d459f044
+
+###
+GET http://localhost:3000/dev/customers/{{customerId}}
+Content-Type: application/json
